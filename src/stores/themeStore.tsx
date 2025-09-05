@@ -13,7 +13,7 @@ type ActionTypes = {
 export const useThemeStore = create<StateTypes & ActionTypes>()(
   persist(
     (set) => ({
-      isDarkMode: false,
+      isDarkMode: true,
       setIsDarkMode: (isDarkMode: boolean) => {
         set((state) => {
           return {

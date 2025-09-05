@@ -49,8 +49,6 @@ export default function RootLayout({
             <SidebarTrigger className="xs:block md:hidden" />
 
             <main className="py-4 px-4 flex-1">{children}</main>
-
-            <div className="h-38 w-full bg-white fixed bottom-0 left-0" />
           </SidebarProvider>
         </SnackbarProvider>
       </body>

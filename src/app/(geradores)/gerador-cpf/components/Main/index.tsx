@@ -8,8 +8,6 @@ export default function Main() {
         <RootCard title="Gerador de CPF" description="Clique no botão abaixo para gerar um CPF válido.">
           <CardContent />
         </RootCard>
-
-        <div className="w-3xs h-[90%] bg-white" />
       </div>
     </main>
   );
