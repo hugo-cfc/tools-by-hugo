@@ -1,6 +1,7 @@
 "use client";
 
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/AppSideBar";
 import { useThemeStore } from "@/stores";
@@ -50,6 +51,8 @@ export default function RootLayout({
 
             <main className="py-4 px-4 flex-1">{children}</main>
           </SidebarProvider>
+
+          <Analytics />
         </SnackbarProvider>
       </body>
     </html>
